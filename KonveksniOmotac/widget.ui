@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1174</width>
+    <height>710</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Konveksni omotač</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="2" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Broj tačaka</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="brojTacaka">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(167, 167, 167)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="generisiTacke">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(167, 167, 167)</string>
+       </property>
+       <property name="text">
+        <string>Generiši proizvoljne tačke</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Učitavanje iz fajla </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="ucitavanjeFajla">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(167, 167, 167)</string>
+       </property>
+       <property name="text">
+        <string>Open...</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Brzina animacije:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDial" name="brzinaAnimacije">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(107, 107, 107)</string>
+       </property>
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>2000</number>
+       </property>
+       <property name="singleStep">
+        <number>50</number>
+       </property>
+       <property name="pageStep">
+        <number>50</number>
+       </property>
+       <property name="wrapping">
+        <bool>false</bool>
+       </property>
+       <property name="notchesVisible">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pauzaNastavak">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(167, 167, 167)</string>
+       </property>
+       <property name="text">
+        <string>Pauza</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="stop">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(167, 167, 167)</string>
+       </property>
+       <property name="text">
+        <string>Stop</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Generiši konveksni omotač</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="naivniAlgoritam">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(167, 167, 167)</string>
+       </property>
+       <property name="text">
+        <string>Naivni algoritam</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="gremovAlgoritam">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(167, 167, 167)</string>
+       </property>
+       <property name="text">
+        <string>Gremov algoritam</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="obrisiSve">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(167, 167, 167)</string>
+       </property>
+       <property name="text">
+        <string>Obriši sve</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="uputstvo">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(167, 167, 167)</string>
+       </property>
+       <property name="text">
+        <string>Uputstvo</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="0">
+    <widget class="GraphView" name="graphicsView">
+     <property name="backgroundBrush">
+      <brush brushstyle="NoBrush">
+       <color alpha="255">
+        <red>255</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </property>
+     <property name="foregroundBrush">
+      <brush brushstyle="SolidPattern">
+       <color alpha="0">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>GraphView</class>
+   <extends>QGraphicsView</extends>
+   <header location="global">graphview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
